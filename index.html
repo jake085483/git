@@ -1,11 +1,363 @@
 <!DOCTYPE html>
 <html lang="ko">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <h2>안녕하세요.</h2>
-</body>
+  <head>
+    <meta charset="utf-8">
+    <title>JINSEO PORTFOLIO</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="apple-touch-icon" sizes="57x57" href="../img/favicon3/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="../img/favicon3/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="../img/favicon3/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="../img/favicon3/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="../img/favicon3/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="../img/favicon3/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="../img/favicon3/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="../img/favicon3/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="../img/favicon3/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="../img/favicon3/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../img/favicon3/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="../img/favicon3/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../img/favicon3/favicon-16x16.png">
+    <link rel="manifest" href="../img/favicon3/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="../img/favicon3/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+  </head>
+  <body>
+    <section class="mainWrapper">
+      <section class="homeSection" id="homeSection">
+        <div class="firstBackground">
+          <div class="homeWrapper">
+            <div class="signBox"></div>
+            <hr>
+            <nav class="menuNav"></nav>
+            <ul class="navUl">
+              <li class="navLi"><a href="#homeSection">HOME</a></li>
+              <li class="navLi"><a href="#aboutMeSection">ABOUT ME</a></li>
+              <li class="navLi"><a href="#skillSection">SKILL</a></li>
+              <li class="navLi"><a href="#portfolioSection">PORTFOLIO</a></li>
+              <li class="navLi"><a href="#contactSection">CONTACT</a></li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="aboutMeSection" id="aboutMeSection"> 
+        <div class="secondBackground">
+          <div class="aboutMeWrapper"> 
+            <div class="nasaImg1"></div>
+            <div class="nasaImg2"></div>
+            <div class="nasaImg3"></div>
+            <div class="nasaImg4"></div>
+            <section class="aboutMeHead">
+              <h2>ABOUT ME</h2>
+            </section>
+            <section class="mainAboutMe">   
+              <section class="firstMyPhotoSection"></section>
+              <section class="mainIntro">
+                <section class="profileSection">
+                  <div class="profileHead">
+                    <h2>profile</h2>
+                  </div>
+                  <div class="profileBody">
+                    <article class="profileName">
+                      <p>박진서(Pak Jin Seo)</p>
+                    </article>
+                    <article class="profileBirth">
+                      <p>2002. 06. 04</p>
+                    </article>
+                    <article class="profileAddress">
+                      <p>경기도 시흥시 정왕동</p>
+                    </article>
+                    <article class="profileSchool">
+                      <p>신안산대학교 컴퓨터정보과 졸업 </p>
+                    </article>
+                    <article class="profilePhone">
+                      <p>010-8764-1854</p>
+                    </article>
+                    <article class="profileEmail">
+                      <p>jake085483@gmail.com</p>
+                    </article>
+                  </div>
+                </section>
+                <section class="introduceSection">
+                  <div class="introduceHead">
+                    <h2>introduce</h2>
+                  </div>
+                  <div class="introduceBody">
+                    <p>안녕하세요 사용자가 원하는 개발자가 되고 싶은 신입 개발자 박진서입니다.</p>
+                    <p>문제를 해결하는 것에 흥미를 느끼고, 프로그램 개발자를 꿈꾸게 된 이유는 새로운 기술을 통해 사람들의 삶을 더 나은 방향으로 바꾸고. 소프트웨어 개발을 통해 혁신적인 아이디어를 현실로 구현하고, 사용자들에게 가치를 제공하는 일에 열정을 쏟아붇겠습니다.</p>
+                    <p>새로운 도전에 적극적으로 나서며, 지속적인 성장을 추구합니다. 함께 일하며 서로를 더 나은 방향으로 이끌어 나가겠습니다.</p>
+                  </div>
+                </section>
+              </section>
+            </section>
+          </div>
+        </div>
+      </section>
+      <section class="skillSection" id="skillSection">
+        <div class="thirdBackground">
+          <div class="skillWrapper">
+            <h2>SKILL</h2>
+            <div class="skillMain">
+              <div class="firstSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="firstStickerImg"></div>
+                    <h4>Pug</h4>
+                    <div class="imgBox">
+                      <div class="pugImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="firstStickerImg"></div>
+                    <p>ㅁㄴ애머냐ㅐ어</p>
+                  </div>
+                </div>
+              </div>
+              <div class="secondSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="secondStickerImg"></div>
+                    <h4>Sass</h4>
+                    <div class="imgBox">
+                      <div class="sassImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="secondStickerImg"></div>
+                    <p>asdasd</p>
+                  </div>
+                </div>
+              </div>
+              <div class="thirdSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="thirdStickerImg"></div>
+                    <h4>jQuery</h4>
+                    <div class="imgBox">
+                      <div class="jqueryImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="thirdStickerImg"></div>
+                    <p>sdsd</p>
+                  </div>
+                </div>
+              </div>
+              <div class="fourthSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front"> 
+                    <div class="fourthStickerImg"></div>
+                    <h4>JavaScript</h4>
+                    <div class="imgBox">
+                      <div class="javascriptImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="fourthStickerImg"></div>
+                    <p>asdw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="fifthSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="fifthStickerImg"></div>
+                    <h4>TypeScript</h4>
+                    <div class="imgBox">
+                      <div class="typescriptImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="fifthStickerImg"></div>
+                    <p>qasdw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="sixthSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="sixthStickerImg"></div>
+                    <h4>Json</h4>
+                    <div class="imgBox">
+                      <div class="jsonImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="sixthStickerImg"></div>
+                    <p>qasdw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="seventhSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="seventhStickerImg"></div>
+                    <h4>Node.js</h4>
+                    <div class="imgBox">
+                      <div class="nodeImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="seventhStickerImg"></div>
+                    <p>qasdw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="eighthSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="eighthStickerImg"></div>
+                    <h4>Python</h4>
+                    <div class="imgBox">
+                      <div class="pythonImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="eighthStickerImg"></div>
+                    <p>qasdw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="ninthSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="ninthStickerImg"></div>
+                    <h4>Django</h4>
+                    <div class="imgBox">
+                      <div class="djangoImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="ninthStickerImg"></div>
+                    <p>qasdw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="tenthSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="tenthStickerImg"></div>
+                    <h4>Java</h4>
+                    <div class="imgBox">
+                      <div class="javaImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="tenthStickerImg"></div>
+                    <p>qasdw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="eleventhSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="eleventhStickerImg"></div>
+                    <h4>Spring</h4>
+                    <div class="imgBox">
+                      <div class="springImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="eleventhStickerImg"></div>
+                    <p>qasdw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="twelfthSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="twelfthStickerImg"></div>
+                    <h4>MySQL</h4>
+                    <div class="imgBox">
+                      <div class="mysqlImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="twelfthStickerImg"></div>
+                    <p>qasdw</p>
+                  </div>
+                </div>
+              </div>
+              <div class="thirteenthSkillBox">
+                <div class="card" onclick="flipCard(this)">
+                  <div class="front">
+                    <div class="thirteenthStickerImg"></div>
+                    <h4>Linux</h4>
+                    <div class="imgBox">
+                      <div class="linuxImg"></div>
+                    </div>
+                  </div>
+                  <div class="back">
+                    <div class="thirteenthStickerImg"></div>
+                    <p>qasdw</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="portfolioSection" id="portfolioSection"> 
+        <div class="fourthBackground">
+          <div class="portfolioHead">
+            <h2>PORTFOLIO</h2>
+          </div>
+          <div class="actingBox">
+            <div class="portfolioFrameBox">       
+              <div class="nasaImg"></div>
+              <div class="leftLine"></div>
+              <div class="rightLine"></div>
+              <div class="firstImg"></div><a class="matrixSite" href="http://kkms4001.iptime.org/~c19st04/portfolio/matrixCalculator/thirdTry/array.html">SITE 보기</a><a class="matrixPpt" href="/">PPT 보기</a>
+            </div>
+          </div>
+          <div class="actingBox">
+            <div class="portfolioFrameBox">       
+              <div class="nasaImg"></div>
+              <div class="leftLine"></div>
+              <div class="rightLine"></div>
+              <div class="secondImg"></div><a class="weatherSite" href="http://kkms4001.iptime.org/~c19st04/portfolio/weatherDashBoard/html/">SITE 보기</a><a class="weatherPpt" href="http://kkms4001.iptime.org/~c19st04/portfolio/weatherDashBoard/dashboard.pdf">PPT 보기</a>
+            </div>
+          </div>
+          <button class="leftBtn" id="leftBtn"> 
+            <p>&lt</p>
+          </button>
+          <button class="rightBtn" id="rightBtn"> 
+            <p>&gt</p>
+          </button>
+        </div>
+      </section>
+      <section class="contactSection" id="contactSection">
+        <div class="fifthBackground">
+          <div class="contactWrapper">
+            <div class="contactHead">
+              <h2>CONTACT</h2>
+            </div>
+            <div class="mainContact">
+              <div class="secondMyPhotoBox">
+                <div class="redPinImg"></div>
+              </div>
+              <div class="contactBox">
+                <section class="pinBox">
+                  <div class="bluePinImg"></div>
+                  <div class="yellowPinImg"></div>
+                </section>
+                <section class="contactKind">
+                  <article class="firstContact"><a href="tel:+87641854">
+                      <h4>연락처</h4>
+                      <p>010-8764-1854</p></a></article>
+                  <article class="thirdContact"> <a href="mailto:jake085483@gmail.com">
+                      <h4>이메일</h4>
+                      <p>jake085483@gmail.com</p></a></article>
+                  <article class="fifthContact"><a href="https://open.kakao.com/o/s3lVTxjg" target="_blank">
+                      <h4>카카오톡</h4>
+                      <p>jake0854</p></a></article>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </section>
+  </body>
+  <script src="../script/test.js"></script>
 </html>
