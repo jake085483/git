@@ -1,0 +1,751 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "sagaksagak"; /* 폰트 이름 설정 */
+  src: url("./sagaksagak.ttf") format("truetype"); /* ttf 폰트 파일 경로 설정 */
+  /* 추가적으로 웹폰트 형식(eot, woff 등)도 지정할 수 있습니다. */
+}
+@font-face {
+  font-family: "UhBee";
+  src: url("./UhBee.ttf") format("truetype");
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+p {
+  font-size: 1.2rem;
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  font-family: "sagaksagak", "UhBee", sans-serif; /* 폰트 적용 */
+  font-size: 20px;
+  font-weight: bold;
+  background-size: cover;
+  overflow-x: hidden;
+}
+
+h2 {
+  font-size: 2.5rem;
+}
+
+h4 {
+  font-size: 2rem;
+}
+
+a {
+  font-size: 2rem;
+  text-decoration: none; /* 링크의 밑줄 제거 */
+  color: inherit; /* 링크의 색상을 상위 요소와 같게 설정 */
+}
+
+a:hover {
+  cursor: pointer;
+}
+
+hr {
+  width: 50vw;
+  height: 3px;
+  background: #000;
+  border: none;
+}
+
+.mainWrapper {
+  width: 100vw;
+  height: 100vh;
+}
+
+.homeSection, .aboutMeSection, .skillSection, .portfolioSection, .contactSection {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.firstBackground, .secondBackground, .thirdBackground, .fourthBackground, .fifthBackground {
+  width: 100vw;
+  height: 100vh;
+}
+
+.firstBackground {
+  background: url("../img/rainbow.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.homeWrapper {
+  width: 1200px;
+  height: 800px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.signBox {
+  width: 50vw; /* 이미지의 너비와 높이와 동일하게 조정합니다. */
+  height: 50vh;
+  background: url("../img/sign.png") no-repeat; /* 이미지를 배경으로 설정합니다. */
+  background-size: 100%;
+  margin-bottom: 5px;
+}
+
+.navUl {
+  display: flex; /* 추가된 부분 */
+  list-style: none;
+}
+
+.navLi {
+  margin-right: 100px;
+  margin-top: 10px;
+}
+
+.navLi:last-of-type {
+  margin-right: 0;
+}
+
+.secondBackground {
+  background: url("../img/mountain.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.aboutMeWrapper {
+  width: 61%;
+  height: 60%;
+  background-color: #ddd;
+  position: relative;
+}
+
+.nasaImg1, .nasaImg2, .nasaImg3, .nasaImg4 {
+  width: 20px;
+  height: 20px;
+  background: url("../img/nasa.png") no-repeat 100%;
+  position: absolute;
+}
+
+.nasaImg1 {
+  top: 10px;
+  left: 10px;
+}
+
+.nasaImg2 {
+  bottom: 10px;
+  left: 10px;
+}
+
+.nasaImg3 {
+  top: 10px;
+  right: 10px;
+}
+
+.nasaImg4 {
+  bottom: 10px;
+  right: 10px;
+}
+
+.aboutMeHead {
+  width: 100%;
+  height: 10%;
+}
+
+.mainAboutMe {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("../img/sky.jpg");
+}
+
+.firstMyPhotoSection {
+  width: 20%;
+  height: 100%;
+  background: url("../img/myPhoto3.jpg") no-repeat;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.mainIntro {
+  width: 56%;
+  height: 100%;
+  margin-left: 10px;
+}
+
+.mainIntro .profileSection {
+  width: 100%;
+  height: 49%;
+  margin-bottom: 10px;
+  background: #eee;
+}
+
+.mainIntro .profileSection .profileHead {
+  width: 100%;
+  height: 20%;
+  background: url("../img/car.jpg") no-repeat;
+  background-size: cover;
+}
+
+.mainIntro .profileSection .profileBody {
+  width: 100%;
+  height: 80%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.mainIntro .profileSection .profileBody article {
+  width: 50%; /* 요소들을 반으로 나누어서 배치합니다. */
+  box-sizing: border-box; /* 너비에 padding과 border가 포함되도록 합니다. */
+  margin-top: 2px;
+}
+
+.profileName,
+.profileBirth,
+.profileAddress {
+  float: left; /* 왼쪽으로 배치합니다. */
+}
+
+.profileSchool,
+.profilePhone,
+.profileEmail {
+  float: right; /* 오른쪽으로 배치합니다. */
+}
+
+.mainIntro .introduceSection {
+  width: 100%;
+  height: 49%;
+  background: #bbb;
+}
+
+.mainIntro .introduceSection .introduceHead {
+  width: 100%;
+  height: 20%;
+  background: url("../img/car.jpg") no-repeat;
+  background-size: cover;
+}
+
+.mainIntro .introduceSection .introduceBody {
+  width: 100%;
+  height: 80%;
+  overflow-y: scroll;
+  padding: 0 1rem;
+}
+
+.mainIntro .introduceSection .introduceBody p {
+  font-size: 1rem;
+  text-align: left;
+  margin: 1rem 0;
+}
+
+.thirdBackground {
+  background: url("../img/sky.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.skillWrapper {
+  width: 60vw;
+  height: 90vh;
+}
+
+.skillMain {
+  width: 100vw;
+  height: 100vh;
+  position: relative;
+}
+
+.firstSkillBox, .secondSkillBox, .thirdSkillBox, .fourthSkillBox, .fifthSkillBox, .sixthSkillBox, .seventhSkillBox, .eighthSkillBox, .ninthSkillBox, .tenthSkillBox, .eleventhSkillBox, .twelfthSkillBox, .thirteenthSkillBox {
+  width: 7vw;
+  height: 28vh;
+  position: absolute;
+}
+
+.skillMain .firstSkillBox {
+  left: 2.5vw;
+  top: 0vh;
+}
+
+.skillMain .secondSkillBox {
+  left: 10.5vw;
+  top: 0vh;
+}
+
+.skillMain .thirdSkillBox {
+  left: 18.5vw;
+  top: 0vh;
+}
+
+.skillMain .fourthSkillBox {
+  left: 2.5vw;
+  top: 32vh;
+}
+
+.skillMain .fifthSkillBox {
+  left: 10.5vw;
+  top: 32vh;
+}
+
+.skillMain .sixthSkillBox {
+  left: 18.5vw;
+  top: 32vh;
+}
+
+.skillMain .seventhSkillBox {
+  left: 26.5vw;
+  top: 32vh;
+}
+
+.skillMain .eighthSkillBox {
+  left: 34.5vw;
+  top: 0vh;
+}
+
+.skillMain .ninthSkillBox {
+  left: 42.5vw;
+  top: 0vh;
+}
+
+.skillMain .tenthSkillBox {
+  left: 50.5vw;
+  top: 0vh;
+}
+
+.skillMain .eleventhSkillBox {
+  left: 34.5vw;
+  top: 32vh;
+}
+
+.skillMain .twelfthSkillBox {
+  left: 42.5vw;
+  top: 32vh;
+}
+
+.skillMain .thirteenthSkillBox {
+  left: 50.5vw;
+  top: 32vh;
+}
+
+.card {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.5s;
+  cursor: pointer;
+}
+
+.front, .back {
+  position: absolute; /* 상대 위치 설정 */
+  width: 100%; /* 가로 크기 설정 */
+  height: 100%; /* 세로 크기 설정 */
+  backface-visibility: hidden; /* 뒷면 가리기 */
+}
+
+.front {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.back {
+  transform: rotateY(180deg);
+  background: #fff;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex; /* 자식 요소들을 함께 보이도록 설정 */
+  justify-content: center;
+  align-items: center;
+  backface-visibility: hidden; /* 뒷면 가리기 */
+  transform-style: preserve-3d; /* 3D 변환 유지 */
+}
+
+.card.flipped .front {
+  display: none; /* 앞면 숨김 */
+}
+
+.card.flipped .back {
+  display: flex; /* 뒷면 보이기 */
+}
+
+.skillMain h4,
+.skillMain p {
+  font-size: 1rem;
+  color: #000;
+}
+
+.flipped {
+  transform: rotateY(180deg);
+}
+
+.firstStickerImg, .secondStickerImg, .thirdStickerImg, .fourthStickerImg, .fifthStickerImg, .sixthStickerImg, .seventhStickerImg, .eighthStickerImg, .ninthStickerImg, .tenthStickerImg, .eleventhStickerImg, .twelfthStickerImg, .thirteenthStickerImg {
+  width: 4vw;
+  height: 4vh;
+  background: url("../img/tape.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -2vh;
+  left: 1.5vw;
+  z-index: 1000; /* 다른 요소 위에 표시되도록 설정 */
+  display: block;
+  visibility: visible;
+}
+
+.skillMain h4 {
+  margin-top: 30px;
+  letter-spacing: 2px;
+}
+
+.imgBox {
+  width: 100%;
+  height: 60%;
+  display: flex;
+  justify-content: center;
+}
+
+.pugImg, .sassImg, .jqueryImg, .javascriptImg, .typescriptImg, .jsonImg, .nodeImg, .pythonImg, .djangoImg, .javaImg, .springImg, .mysqlImg, .linuxImg {
+  width: 60%;
+  height: 64%;
+  margin-top: 10px;
+}
+
+.pugImg {
+  background: url("../img/tool/pug.png") no-repeat;
+  background-size: 100%;
+}
+
+.sassImg {
+  background: url("../img/tool/sass.png") no-repeat;
+  background-size: 100%;
+}
+
+.jqueryImg {
+  background: url("../img/tool/jquery.png") no-repeat;
+  background-size: 100%;
+}
+
+.javascriptImg {
+  background: url("../img/tool/js.png") no-repeat;
+  background-size: 100%;
+}
+
+.typescriptImg {
+  background: url("../img/tool/typescript.png") no-repeat;
+  background-size: 100%;
+}
+
+.jsonImg {
+  background: url("../img/tool/json.png") no-repeat;
+  background-size: 100%;
+}
+
+.nodeImg {
+  background: url("../img/tool/node.png") no-repeat;
+  background-size: 100%;
+}
+
+.pythonImg {
+  background: url("../img/tool/python.png") no-repeat;
+  background-size: 100%;
+}
+
+.djangoImg {
+  background: url("../img/tool/django.png") no-repeat;
+  background-size: 100%;
+}
+
+.javaImg {
+  background: url("../img/tool/java.png") no-repeat;
+  background-size: 100%;
+}
+
+.springImg {
+  background: url("../img/tool/spring.png") no-repeat;
+  background-size: 100%;
+}
+
+.mysqlImg {
+  background: url("../img/tool/sql.png") no-repeat;
+  background-size: 100%;
+}
+
+.linuxImg {
+  background: url("../img/tool/linux.png") no-repeat;
+  background-size: 100%;
+}
+
+.fourthBackground {
+  background: url("../img/pinksky.jpg") no-repeat center center;
+  background-size: cover;
+  position: relative;
+  height: 100vh; /* Adjust as needed */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.portfolioHead {
+  width: 10%;
+  height: 10%;
+  position: absolute;
+  left: 45%;
+  top: 10%;
+}
+
+.actingBox {
+  width: 55vw;
+  height: 66vh;
+  position: absolute;
+  left: 23%;
+  top: 20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  transition: transform 0.5s ease;
+}
+
+.portfolioFrameBox {
+  width: 100%;
+  height: 100%;
+  border: 10px solid darkgoldenrod;
+  z-index: 99;
+  overflow: hidden;
+  position: relative;
+}
+
+.portfolioFrameBox .nasaImg {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url("../img/nasa.png") no-repeat;
+  background-size: 100%;
+  position: absolute;
+  top: -10%; /* Adjust this value as needed */
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+}
+
+.leftLine, .rightLine {
+  width: 4vw;
+  height: 2px;
+  border-top: 6px dashed brown;
+  position: absolute;
+  top: -4%;
+  z-index: -1;
+}
+
+.leftLine {
+  transform: rotate(135deg);
+  left: 23.5vw;
+}
+
+.rightLine {
+  transform: rotate(45deg);
+  right: 23.5vw;
+}
+
+.firstImg, .secondImg {
+  width: 100%;
+  height: 100%;
+}
+
+.firstImg {
+  background: url("../img/hang.png") no-repeat;
+  background-size: cover;
+}
+
+.secondImg {
+  background: url("../img/weatherDashBoard.png") no-repeat;
+  background-size: cover;
+}
+
+.portfolioFrameBox .firstImg, .portfolioFrameBox .secondImg {
+  position: relative;
+  transition: filter 0.3s; /* 변화를 부드럽게 만들기 위한 transition 효과 */
+}
+
+.portfolioFrameBox .firstImg:hover, .portfolioFrameBox .secondImg:hover {
+  filter: brightness(50%); /* 호버 시 이미지를 약간 어둡게 만드는 효과 */
+}
+
+.portfolioFrameBox .matrixSite,
+.portfolioFrameBox .weatherSite,
+.portfolioFrameBox .matrixPpt,
+.portfolioFrameBox .weatherPpt {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  display: none;
+  z-index: 1;
+  border: 1px solid #fff;
+  color: white;
+  border-radius: 1rem;
+  width: 10rem;
+  height: 2.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  background-color: rgba(250, 250, 250, 0.5);
+}
+
+.portfolioFrameBox .matrixSite,
+.portfolioFrameBox .weatherSite {
+  left: 30%;
+}
+
+.portfolioFrameBox .matrixPpt,
+.portfolioFrameBox .weatherPpt {
+  right: 30%;
+}
+
+.portfolioFrameBox:hover .matrixSite,
+.portfolioFrameBox:hover .matrixPpt,
+.portfolioFrameBox:hover .weatherSite,
+.portfolioFrameBox:hover .weatherPpt {
+  display: block; /* 호버 시 링크 표시 */
+}
+
+.leftBtn, .rightBtn {
+  width: 8%;
+  height: 18%;
+  background: url("../img/cameraview.png");
+  background-size: cover;
+  z-index: 99;
+  position: absolute;
+  border: none;
+}
+
+.leftBtn {
+  left: 10%;
+}
+
+.rightBtn {
+  right: 10%;
+}
+
+.leftBtn:hover, .rightBtn:hover {
+  cursor: pointer;
+}
+
+.leftBtn p, .rightBtn p {
+  font-size: 40px;
+  position: relative;
+  top: 8%;
+}
+
+.leftBtn p {
+  left: -10%;
+}
+
+.rightBtn p {
+  left: -10%;
+}
+
+.fifthBackground {
+  background: url("../img/oido.jpg") no-repeat center center;
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.contactWrapper {
+  width: 60vw;
+  height: 70vh;
+}
+
+.contactHead {
+  width: 100%;
+  height: 10%;
+}
+
+.mainContact {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.secondMyPhotoBox {
+  width: 40%;
+  height: 80%;
+  background: url("../img/myPhoto4.jpg") no-repeat;
+  background-size: cover; /* 이미지를 요소에 맞게 조정 */
+  background-position: center top; /* 이미지를 요소의 상단 중앙에 배치 */
+  display: flex;
+  justify-content: center;
+}
+
+.secondMyPhotoBox .redPinImg {
+  width: 40px;
+  height: 40px;
+  background: url("../img/redpin.png");
+  background-size: 100%;
+  z-index: 2;
+}
+
+.contactBox {
+  width: 56%;
+  height: 80%;
+  background: #ddd;
+  position: relative;
+}
+
+.pinBox {
+  width: 100%;
+  height: 10%;
+}
+
+.bluePinImg, .yellowPinImg {
+  width: 40px;
+  height: 40px;
+  z-index: 2;
+  position: absolute;
+  margin-bottom: 40px;
+}
+
+.bluePinImg {
+  background: url("../img/bluepin.png");
+  background-size: 100%;
+  left: 30%;
+}
+
+.yellowPinImg {
+  background: url("../img/yellowpin.png");
+  background-size: 100%;
+  right: 30%;
+}
+
+.contactKind {
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.firstContact, .secondContact, .thirdContact, .fourthContact, .fifthContact, .sixthContact {
+  width: 100%;
+  height: 5%;
+  box-sizing: border-box;
+  margin-top: 2px;
+}
+
+/*# sourceMappingURL=style.css.map */

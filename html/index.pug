@@ -1,0 +1,294 @@
+doctype html
+html(lang="ko")
+    head
+        meta(charset="utf-8")
+        title JINSEO PORTFOLIO
+        link(rel="stylesheet" href="../css/style.css")   
+        link(rel="apple-touch-icon" sizes="57x57" href="../img/favicon3/apple-icon-57x57.png")
+        link(rel="apple-touch-icon" sizes="60x60" href="../img/favicon3/apple-icon-60x60.png")
+        link(rel="apple-touch-icon" sizes="72x72" href="../img/favicon3/apple-icon-72x72.png")
+        link(rel="apple-touch-icon" sizes="76x76" href="../img/favicon3/apple-icon-76x76.png")
+        link(rel="apple-touch-icon" sizes="114x114" href="../img/favicon3/apple-icon-114x114.png")
+        link(rel="apple-touch-icon" sizes="120x120" href="../img/favicon3/apple-icon-120x120.png")
+        link(rel="apple-touch-icon" sizes="144x144" href="../img/favicon3/apple-icon-144x144.png")
+        link(rel="apple-touch-icon" sizes="152x152" href="../img/favicon3/apple-icon-152x152.png")
+        link(rel="apple-touch-icon" sizes="180x180" href="../img/favicon3/apple-icon-180x180.png")
+        link(rel="icon" type="image/png" sizes="192x192"  href="../img/favicon3/android-icon-192x192.png")
+        link(rel="icon" type="image/png" sizes="32x32" href="../img/favicon3/favicon-32x32.png")
+        link(rel="icon" type="image/png" sizes="96x96" href="../img/favicon3/favicon-96x96.png")
+        link(rel="icon" type="image/png" sizes="16x16" href="../img/favicon3/favicon-16x16.png")
+        link(rel="manifest" href="../img/favicon3/manifest.json")
+        meta(name="msapplication-TileColor" content="#ffffff")
+        meta(name="msapplication-TileImage" content="../img/favicon3/ms-icon-144x144.png")
+        meta(name="theme-color" content="#ffffff")
+        
+
+    body
+        section.mainWrapper
+            section#homeSection.homeSection
+                .firstBackground
+                    .homeWrapper
+                        .signBox
+                        hr
+                        nav.menuNav
+                        ul.navUl
+                            li.navLi
+                                a(href="#homeSection") HOME
+                            li.navLi
+                                a(href="#aboutMeSection") ABOUT ME
+                            li.navLi
+                                a(href="#skillSection") SKILL
+                            li.navLi
+                                a(href="#portfolioSection") PORTFOLIO
+                            li.navLi
+                                a(href="#contactSection") CONTACT
+
+            section#aboutMeSection.aboutMeSection 
+                .secondBackground
+                    .aboutMeWrapper  
+                        .nasaImg1
+                        .nasaImg2
+                        .nasaImg3
+                        .nasaImg4
+                        section.aboutMeHead
+                            h2 ABOUT ME
+                            
+                        section.mainAboutMe    
+                            section.firstMyPhotoSection
+                                
+                            section.mainIntro
+                                section.profileSection
+                                    .profileHead
+                                        h2 profile
+                                    .profileBody
+                                        article.profileName
+                                            p 박진서(Pak Jin Seo)
+                                        article.profileBirth
+                                            p 2002. 06. 04
+                                        article.profileAddress
+                                            p 경기도 시흥시 정왕동
+                                        article.profileSchool
+                                            p 신안산대학교 컴퓨터정보과 졸업 
+                            
+                                        article.profilePhone
+                                            p 010-8764-1854
+
+                                        article.profileEmail
+                                            p jake085483@gmail.com
+                                section.introduceSection
+                                    .introduceHead
+                                        h2 introduce
+                                    .introduceBody
+                                        p 안녕하세요 사용자가 원하는 개발자가 되고 싶은 신입 개발자 박진서입니다.
+                                        p 문제를 해결하는 것에 흥미를 느끼고, 프로그램 개발자를 꿈꾸게 된 이유는 새로운 기술을 통해 사람들의 삶을 더 나은 방향으로 바꾸고. 소프트웨어 개발을 통해 혁신적인 아이디어를 현실로 구현하고, 사용자들에게 가치를 제공하는 일에 열정을 쏟아붇겠습니다.
+                                        p 새로운 도전에 적극적으로 나서며, 지속적인 성장을 추구합니다. 함께 일하며 서로를 더 나은 방향으로 이끌어 나가겠습니다.
+                                        
+            section#skillSection.skillSection
+                .thirdBackground
+                    .skillWrapper
+                        h2 SKILL
+                        .skillMain
+
+                            .firstSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .firstStickerImg
+                                        h4 Pug
+                                        .imgBox
+                                            .pugImg
+                                    .back
+                                        .firstStickerImg
+                                        p ㅁㄴ애머냐ㅐ어
+                                
+
+                            .secondSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .secondStickerImg
+                                        h4 Sass
+                                        .imgBox
+                                            .sassImg
+                                    .back
+                                        .secondStickerImg
+                                        p asdasd
+                                
+
+                            .thirdSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .thirdStickerImg
+                                        h4 jQuery
+                                        .imgBox
+                                            .jqueryImg
+                                    .back
+                                        .thirdStickerImg
+                                        p sdsd
+
+                            .fourthSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front 
+                                        .fourthStickerImg
+                                        h4 JavaScript
+                                        .imgBox
+                                            .javascriptImg
+                                    .back
+                                        .fourthStickerImg
+                                        p asdw
+                                
+
+                            .fifthSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .fifthStickerImg
+                                        h4 TypeScript
+                                        .imgBox
+                                            .typescriptImg
+                                    .back
+                                        .fifthStickerImg
+                                        p qasdw
+
+                            .sixthSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .sixthStickerImg
+                                        h4 Json
+                                        .imgBox
+                                            .jsonImg
+                                    .back
+                                        .sixthStickerImg
+                                        p qasdw
+                            
+                            .seventhSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .seventhStickerImg
+                                        h4 Node.js
+                                        .imgBox
+                                            .nodeImg
+                                    .back
+                                        .seventhStickerImg
+                                        p qasdw
+
+                            .eighthSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .eighthStickerImg
+                                        h4 Python
+                                        .imgBox
+                                            .pythonImg
+                                    .back
+                                        .eighthStickerImg
+                                        p qasdw
+                            
+                            .ninthSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .ninthStickerImg
+                                        h4 Django
+                                        .imgBox
+                                            .djangoImg
+                                    .back
+                                        .ninthStickerImg
+                                        p qasdw
+
+                            .tenthSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .tenthStickerImg
+                                        h4 Java
+                                        .imgBox
+                                            .javaImg
+                                    .back
+                                        .tenthStickerImg
+                                        p qasdw
+
+                            .eleventhSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .eleventhStickerImg
+                                        h4 Spring
+                                        .imgBox
+                                            .springImg
+                                    .back
+                                        .eleventhStickerImg
+                                        p qasdw
+
+                            .twelfthSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .twelfthStickerImg
+                                        h4 MySQL
+                                        .imgBox
+                                            .mysqlImg
+                                    .back
+                                        .twelfthStickerImg
+                                        p qasdw
+
+                            .thirteenthSkillBox
+                                .card(onclick="flipCard(this)")
+                                    .front
+                                        .thirteenthStickerImg
+                                        h4 Linux
+                                        .imgBox
+                                            .linuxImg
+                                    .back
+                                        .thirteenthStickerImg
+                                        p qasdw
+
+            section#portfolioSection.portfolioSection 
+                .fourthBackground
+                    .portfolioHead
+                        h2 PORTFOLIO
+                    
+                    .actingBox
+                        .portfolioFrameBox        
+                            .nasaImg
+                            .leftLine
+                            .rightLine
+                            .firstImg
+                            a.matrixSite(href="http://kkms4001.iptime.org/~c19st04/portfolio/matrixCalculator/thirdTry/array.html") SITE 보기
+                            a.matrixPpt(href="/") PPT 보기
+                
+                    .actingBox
+                        .portfolioFrameBox        
+                            .nasaImg
+                            .leftLine
+                            .rightLine
+                            .secondImg
+                            a.weatherSite(href="http://kkms4001.iptime.org/~c19st04/portfolio/weatherDashBoard/html/") SITE 보기
+                            a.weatherPpt(href="http://kkms4001.iptime.org/~c19st04/portfolio/weatherDashBoard/dashboard.pdf") PPT 보기
+
+                    button#leftBtn.leftBtn 
+                        p &lt
+                    button#rightBtn.rightBtn 
+                        p &gt
+
+            section#contactSection.contactSection
+                .fifthBackground
+                    .contactWrapper
+                        .contactHead
+                            h2 CONTACT
+                        .mainContact
+                            .secondMyPhotoBox
+                                .redPinImg
+                            
+                            .contactBox
+                                section.pinBox
+                                    .bluePinImg
+                                    .yellowPinImg
+                                section.contactKind
+                                    article.firstContact
+                                        a(href="tel:+87641854")
+                                            h4 연락처
+                                            p 010-8764-1854
+                                    article.thirdContact 
+                                        a(href="mailto:jake085483@gmail.com")
+                                            h4 이메일
+                                            p jake085483@gmail.com
+                                    article.fifthContact
+                                        a(href="https://open.kakao.com/o/s3lVTxjg" target="_blank")
+                                            h4 카카오톡
+                                            p jake0854
+                        
+    script(src="../script/test.js")
+    
